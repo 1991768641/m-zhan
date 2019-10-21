@@ -10,7 +10,7 @@ class Index {
     render() {
         const html = layoutView({});
         const nav = layoutnavView({});
-        
+        let name=window.localStorage.getItem('newuser');
         var cityname = window.localStorage.getItem('city');
         var cityid = window.localStorage.getItem('cityid');
 
@@ -26,7 +26,17 @@ class Index {
         $('.navlist').html(nav);
         $('#root').html(html);
 
-        $('footer li').on('tap', this.bindClick);
+        $('footer .li-cinema').on('tap', this.bindClick);
+        $('footer .li-movie').on('tap', this.bindClick);
+
+        $('.li-name').on('tap',function(){
+            if(name){
+                window.location.hash='profile';
+            }
+            else{
+                window.location.hash='login';
+            }
+        })
     }
 }
 export default new Index();

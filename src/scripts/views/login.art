@@ -38,6 +38,16 @@
         <div class="btn-wrapper">
             <button type="submit" class="login-btn">登录</button>
         </div>
+
+        <div class="login-subline">
+            <div><a class="register-now">立即注册</a></div>
+            <div><a>找回密码</a></div>
+        </div>
+
+        <div class="kefu">
+            &copy;猫眼电影 客服电话：
+            <a>400-670-5335</a>
+        </div>
     </div>
 
 </div>

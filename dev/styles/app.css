@@ -1220,7 +1220,7 @@ nav {
               height: .4rem; }
     .box .container .group:last-child {
       width: 100%;
-      height: 1.32rem;
+      height: 1.76rem;
       background: #fff;
       margin-top: .1rem;
       display: flex; }
@@ -2732,21 +2732,192 @@ body {
         padding-left: .1rem; }
         .loginbox .normal-login-form .login-list .visibale .username {
           width: 100%;
-          height: .435rem; }
+          height: .435rem;
+          display: flex;
+          align-items: center; }
           .loginbox .normal-login-form .login-list .visibale .username #inp-username {
             border: 0;
-            width: 100%;
-            height: .435rem;
+            width: 95%;
+            height: .335rem;
             font-size: .15rem;
             padding: 0;
-            border-bottom: 1px solid #d6d6d6; }
+            border-radius: .03rem;
+            padding-left: .1rem; }
+          .loginbox .normal-login-form .login-list .visibale .username #inp-username:hover {
+            background: #f0f0f0; }
         .loginbox .normal-login-form .login-list .visibale .password {
           width: 100%;
           height: .435rem; }
           .loginbox .normal-login-form .login-list .visibale .password #inp-password {
             border: 0;
-            width: 100%;
-            height: .435rem;
+            width: 95%;
+            height: .335rem;
             font-size: .15rem;
             border-radius: .03rem;
-            padding: 0; }
+            padding: 0;
+            padding-left: .1rem; }
+          .loginbox .normal-login-form .login-list .visibale .password #inp-password:hover {
+            background: #f0f0f0; }
+    .loginbox .normal-login-form .btn-wrapper {
+      width: 100%;
+      height: .6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .loginbox .normal-login-form .btn-wrapper .login-btn {
+        border: none;
+        width: 3rem;
+        height: .3rem;
+        color: #fff;
+        background: #df2d2d;
+        border-radius: .03rem; }
+    .loginbox .normal-login-form .login-subline {
+      padding: 0 .1rem;
+      height: .28rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .loginbox .normal-login-form .login-subline a {
+        color: #FE8C00;
+        font-size: .13rem; }
+    .loginbox .normal-login-form .kefu {
+      width: 100%;
+      height: .34rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .loginbox .normal-login-form .kefu a {
+        color: #df2d2d; }
+
+body {
+  background: #f8f8f8; }
+
+.registerbox {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8; }
+  .registerbox .login-navbar {
+    width: 100%;
+    border-bottom: none;
+    height: .505rem;
+    color: #fff;
+    background: #df2d2d;
+    border-bottom: 1px solid #bc1d1d;
+    position: relative;
+    display: flex; }
+    .registerbox .login-navbar .nav-wrap-left {
+      width: .505rem;
+      height: .505rem;
+      line-height: .505rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .registerbox .login-navbar .nav-wrap-left .loginback {
+        font-size: .4rem;
+        font-family: '宋体';
+        color: #fff; }
+    .registerbox .login-navbar .nav-header {
+      flex: 1;
+      font-size: .18rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 100;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+  .registerbox .setregister {
+    width: 100%;
+    height: .404rem;
+    padding: 0 .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; }
+    .registerbox .setregister .account {
+      flex: 1;
+      height: .404rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: .16rem;
+      font-weight: 100;
+      color: #333; }
+      .registerbox .setregister .account .registercontent {
+        height: .404rem;
+        line-height: .404rem;
+        display: flex;
+        align-items: center; }
+    .registerbox .setregister .active-border {
+      border-bottom: .04rem solid #FFC300; }
+  .registerbox .normal-register-form {
+    width: 100%;
+    height: 1.31rem;
+    margin-top: .04rem; }
+    .registerbox .normal-register-form .register-list {
+      width: 100%;
+      height: .87rem;
+      display: flex;
+      background: #fff; }
+      .registerbox .normal-register-form .register-list .visibale {
+        flex: 1;
+        padding-left: .1rem; }
+        .registerbox .normal-register-form .register-list .visibale .username {
+          width: 100%;
+          height: .435rem;
+          display: flex;
+          align-items: center; }
+          .registerbox .normal-register-form .register-list .visibale .username #inp-username {
+            border: 0;
+            width: 95%;
+            height: .335rem;
+            font-size: .15rem;
+            padding: 0;
+            border-radius: .03rem;
+            padding-left: .1rem; }
+          .registerbox .normal-register-form .register-list .visibale .username #inp-username:hover {
+            background: #f0f0f0; }
+        .registerbox .normal-register-form .register-list .visibale .password {
+          width: 100%;
+          height: .435rem; }
+          .registerbox .normal-register-form .register-list .visibale .password #inp-password {
+            border: 0;
+            width: 95%;
+            height: .335rem;
+            font-size: .15rem;
+            border-radius: .03rem;
+            padding: 0;
+            padding-left: .1rem; }
+          .registerbox .normal-register-form .register-list .visibale .password #inp-password:hover {
+            background: #f0f0f0; }
+    .registerbox .normal-register-form .btn-wrapper {
+      width: 100%;
+      height: .6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .registerbox .normal-register-form .btn-wrapper .register-btn {
+        border: none;
+        width: 3rem;
+        height: .3rem;
+        color: #fff;
+        background: #df2d2d;
+        border-radius: .03rem; }
+    .registerbox .normal-register-form .login-subline {
+      padding: 0 .1rem;
+      height: .28rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .registerbox .normal-register-form .login-subline a {
+        color: #FE8C00;
+        font-size: .13rem; }
+    .registerbox .normal-register-form .kefu {
+      width: 100%;
+      height: .34rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .registerbox .normal-register-form .kefu a {
+        color: #df2d2d; }

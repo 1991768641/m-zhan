@@ -44,6 +44,12 @@
                     </a>
                 </div>
 
+                <div class="item loginout">
+                    <a>
+                        <span>退出</span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>

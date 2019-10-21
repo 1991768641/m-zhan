@@ -33,9 +33,6 @@ class Cinema {
 
     async render() {
         indexController.render();
-
-        
-
         let that = this;
         let date = new Date();
         let year = date.getFullYear();

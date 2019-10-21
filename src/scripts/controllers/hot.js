@@ -74,9 +74,9 @@ class Hot {
         $('.moveslist').html(html);
 
         let cityid = this.cityid = window.localStorage.getItem('cityid');
-
+        that.offset=0;
         let result = await hotModel.get({
-            offset: this.offset,
+            offset: 0,
             cityid: cityid || 1
         })
         let list = this.list = result.coming;
@@ -102,7 +102,7 @@ class Hot {
         });
 
         bScrollcow.on('scrollEnd', async function () {
-            if (this.x <= this.maxScrollX && that.offset < movieIdslength + 1) {
+            if (this.x <= this.maxScrollX/*  && that.offset < movieIdslength + 1 */) {
                 let text = that.offset;
 
                 if (that.offset < movieIdslength - 10) {
@@ -112,7 +112,7 @@ class Hot {
                 }
 
                 let result1 = await hotModel.get({
-                    offset: that.offset,
+                    offset: that.offset+1,
                     cityid: cityid || 1
                 })
 
@@ -126,7 +126,7 @@ class Hot {
             }
         });
 
-
+        
 
         $('.hot-item').eq(0).removeClass('active');
         $('.hot-item').eq(1).addClass('active');
@@ -177,13 +177,14 @@ class Hot {
                 let list = result.coming;
 
                 that.detailitem = [...that.detailitem, ...list];
-                console.log(that.detailitem);
+
                 that.comingitem(that.detailitem);
 
             }
 
         });
         that.num = 10;
+
     }
 
 

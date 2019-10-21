@@ -80,7 +80,6 @@ body{
     .normal-login-form {
         width: 100%;
         height: 1.31rem;
-        
         margin-top: .04rem;
 
         .login-list {
@@ -95,13 +94,20 @@ body{
                 .username {
                     width: 100%;
                     height: .435rem;
+                    display: flex;
+                    
+                    align-items: center;
                     #inp-username {
                         border: 0;
-                        width: 100%;
-                        height: .435rem;
+                        width:95%;
+                        height: .335rem;
                         font-size: .15rem;
                         padding: 0;
-                        border-bottom: 1px solid #d6d6d6;
+                        border-radius: .03rem;
+                        padding-left: .1rem;
+                    }
+                    #inp-username:hover{
+                        background: #f0f0f0;
                     }
                 }
 
@@ -110,18 +116,61 @@ body{
                     height: .435rem;
                     #inp-password {
                         border: 0;
-                        width: 100%;
-                        height: .435rem;
+                        width: 95%;
+                        height: .335rem;
                         font-size: .15rem;
                         border-radius: .03rem;
                         padding: 0;
-                        
+                        padding-left: .1rem;
+                    }
+                    #inp-password:hover{
+                        background: #f0f0f0;
                     }
                 }
 
 
             }
 
+        }
+
+        .btn-wrapper{
+            width: 100%;
+            height: .6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .login-btn{
+                border: none;
+                width: 3rem;
+                height: .3rem;
+                color: #fff;
+                background: #df2d2d;
+                border-radius: .03rem;
+            }
+        }
+
+        .login-subline{
+            padding:0 .1rem;
+            height: .28rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                color: #FE8C00;
+                font-size: .13rem;
+            }
+
+        }
+
+        .kefu{
+            width: 100%;
+            height: .34rem;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            a{
+                color: #df2d2d;
+            }
         }
     }
 
